@@ -7,12 +7,14 @@ function AboutPage() {
   return (
     <div>
       <Navbar />
-      <h1 className="About-me-title">About Me</h1>
-      <section className="Flex Light-background">
+      <div className="About-me-container">
+        <h1 className="About-me-title">About Me</h1>
+      </div>
+      <section className="Desktop-mobile-flex Light-background">
         <img className="Zoe-portrait" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=799&q=80" alt="Zoe Kline"></img>
         <div className="Flex-column About-me-text">
           <h4>Hey I'm Zoë!</h4>
-          <p>Lorem Ipsum e de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente .</p>
+          <p>Im a 24 year old Ex-Pat living in Madrid, Spain. I relocated to Madrid after graduating from University in California, and I have absolutely fell in love with life here in this city. I began practicing yoga in 2016, but didn’t fully recognize its power and influence in my life until about 3 years later in my last year of University. Throughout the years I have used the many tools of yoga to calm my mind and return to a place of homeostasis in my body. My wish through my work as a yoga teacher is to share my story and these tools to help others work through whatever challenges they face in their everyday lives and to help them connect with themselves and others.</p>
         </div>
       </section>
       <Footer />

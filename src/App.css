@@ -1,3 +1,6 @@
+a:hover{
+  opacity:0.8;
+}
 .Flex{
   display:flex;
 }
@@ -23,6 +26,7 @@
   justify-content: space-between;
 }
 
+
 .Height-100{
   height: 100vh;
 }
@@ -36,6 +40,11 @@
   background-color: grey;
   color: white !important;
   padding: 15px 20px;
+  width:100px;
+  text-decoration: none !important;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a.Grey-button:hover{
@@ -47,6 +56,10 @@ h3, p, a{
   margin:0;
 }
 
+p {
+  font-weight:300;
+}
+
 h1{
   font-family: 'Rubik', sans-serif;
   margin:0;
@@ -54,4 +67,21 @@ h1{
 
 #map {
   height: 100%;
+}
+
+.Text-center{
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px){
+  .Desktop-mobile-flex{
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 640px){
+  .Desktop-mobile-flex{
+    display:flex;
+  }
 }

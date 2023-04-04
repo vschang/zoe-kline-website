@@ -5,7 +5,7 @@ import './Pages.css'
 
 function HomePage() {
   return (
-    <div className="Page">
+    <div>
       <Navbar />
       <section className="Hero">
         <h1>Yoga for your mind, body and soul.</h1>

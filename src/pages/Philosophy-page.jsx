@@ -1,18 +1,28 @@
 import React from 'react';
 import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
+import { Icon } from '@iconify/react';
 
 function PhilosophyPage() {
   return (
-    <div className="Page">
+    <div>
       <Navbar />
-      <h1 className="About-me-title">Philosophy</h1>
-      <section className="Flex Light-background">
+      <div className="About-me-container">
+        <h1 className="About-me-title">Philosophy</h1>
+      </div>
+      <section className="Desktop-mobile-flex Light-background">
         <img className="Zoe-portrait" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=799&q=80" alt="Zoe Kline"></img>
         <div className="Flex-column About-me-text Philosophy-text">
           <h3>Yoga is Union</h3>
-          <p>xtos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por </p>
-          <p>Lorem Ipsum e de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente .</p>
+          <p>My main philosophy of yoga is simple: <strong>Our minds, bodies and spirits are all one and each contributes to the health of the other.</strong> Similarly, on a larger scale, the true nature of yoga encourages that we are ALL part of the bigger picture, the union and the connection we all build with each other</p>
+          <p>As a part of my experience with yoga I have garnered the understanding that many of us come to yoga in search for <strong>movement</strong> or some sort of physical benefit (flexibility, strength, balance etc) but the longer you work with your physical body, it is just a matter of time until you begin to <strong>connect</strong> to something less tangible - your subtle body (your mind and intellect, ego). When we as individuals do this we can gain <strong>understanding</strong> of ourselves, our needs, our desires and our purpose. This is where self-compassion and love is fostered, the thing we all must have to truly give our body what it needs and desires!</p>
+          <div className="Flex Align-center">
+            <p>Movement</p>
+            <Icon icon="material-symbols:arrow-right-alt-rounded" />
+            <p>Connection</p>
+            <Icon icon="material-symbols:arrow-right-alt-rounded" />
+            <p>Understanding</p>
+          </div>
         </div>
       </section>
       <Footer />

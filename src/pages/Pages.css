@@ -2,27 +2,114 @@
 .Hero{
   background-image: url("https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   width: 100vw;
-  height: calc(100vh - 90px);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.Hero > h1{
-  margin:0px;
-  color:white;
-  font-size:55px;
-  font-weight: 400;
-  width:60%;
-  padding:60px 0px 20px 30px;
-  letter-spacing: 1.2px;
+@media only screen and (max-width: 640px){
+  .Hero{
+    height: 100vh;
+  }
+  .Hero > h1{
+    margin:0px;
+    color:white;
+    font-size:40px;
+    font-weight: 400;
+    width:100%;
+    padding:60px 0px 20px 20px;
+    letter-spacing: 1.2px;
+  }
+  .Hero > a{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    padding:20px 0px 0px 20px;
+    letter-spacing: 1px;
+  }
+  .Group-classes-container > img{
+    width: 100vw;
+    height: 50vh;
+  }
+  .Group-classes-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+  }
+  .Group-classes-container > .Grey-button{
+    margin-left:20px;
+  }
+  .Newsletter-container{
+    height:90vh !important;
+  }
+  .Zoe-portrait{
+    width: 90%;
+    padding: 20px;
+    height: 100vh;
+  }
+  .About-me-text{
+    justify-content: center;
+    padding:30px;
+  }
+  .Class-offerings{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .Offerings-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Contact-container{
+    padding:20px
+  }
 }
-.Hero > a{
-  color:white;
-  font-size: 18px;
-  font-weight: 600;
-  padding:20px 0px 0px 30px;
-  letter-spacing: 1px;
+@media only screen and (min-width: 640px){
+  .Hero{
+    height: calc(100vh - 90px);
+  }
+  .Hero > h1{
+    margin:0px;
+    color:white;
+    font-size:55px;
+    font-weight: 400;
+    width:60%;
+    padding:60px 0px 20px 30px;
+    letter-spacing: 1.2px;
+  }
+  .Hero > a{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    padding:20px 0px 0px 30px;
+    letter-spacing: 1px;
+  }
+  .Group-classes-container > img{
+    width: 100vw;
+    height: calc(100vh - 145px);
+  }
+  .Zoe-portrait{
+    width: 40%;
+    padding: 60px;
+    height: 100vh;
+  }
+  .About-me-text{
+    justify-content: center;
+    padding-right:60px;
+  }
+  .Class-offerings{
+    display: flex;
+    justify-content: space-between;
+  }
+  .Offerings-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+  }
 }
 .Group-classes-container{
   height:100vh;
@@ -34,10 +121,7 @@
   padding: 20px;
   color:white;
 }
-.Group-classes-container > img{
-  width: 100vw;
-  height: calc(100vh - 145px);
-}
+
 
 .Newsletter-container{
   height:70vh;
@@ -57,26 +141,19 @@
 
 /* About */
 .About-me-title{
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.About-me-container{
   height: 20vh;
   background: rgb(89, 89, 89);
   display: flex;
   align-items: flex-end;
   color: white;
-  font-size: 50px;
-  font-weight: 400;
   padding: 30px;
 }
 
-.About-me-text{
-  justify-content: center;
-  padding-right:60px;
-}
-
-.Zoe-portrait{
-  width: 40%;
-  padding: 60px;
-  height: 100vh;
-}
 
 .Light-background{
   background: whitesmoke;
@@ -93,7 +170,6 @@
   width: 50%;
   padding: 30px;
   height:60%;
-
 }
 
 .Classes-text{
@@ -117,13 +193,6 @@
 }
 
 /* Offerings */
-.Offerings-page{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height:100vh;
-}
 .Class-offering{
   display: flex;
   flex-direction: column;
@@ -134,11 +203,6 @@
   border-radius:4px;
   height: 220px;
   width: 270px;
-}
-
-.Class-offerings{
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Contact */
