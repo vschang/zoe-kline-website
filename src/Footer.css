@@ -1,0 +1,39 @@
+.Footer > a, .Flex-column > a{
+  color:grey;
+}
+
+.Flex > a{
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.ml-40{
+  margin-left:40px;
+}
+
+.mr-40{
+  margin-right:40px;
+}
+
+@media only screen and (max-width: 640px){
+  .Footer{
+    display:flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+    background-color: lightgrey;
+  }
+}
+@media only screen and (min-width: 640px){
+  .Footer{
+    display:flex;
+    width: 100vw;
+    height: 30vh;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,191 @@
+/* Home page */
+.Hero{
+  background-image: url("https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  width: 100vw;
+  height: calc(100vh - 90px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.Hero > h1{
+  margin:0px;
+  color:white;
+  font-size:55px;
+  font-weight: 400;
+  width:60%;
+  padding:60px 0px 20px 30px;
+  letter-spacing: 1.2px;
+}
+.Hero > a{
+  color:white;
+  font-size: 18px;
+  font-weight: 600;
+  padding:20px 0px 0px 30px;
+  letter-spacing: 1px;
+}
+.Group-classes-container{
+  height:100vh;
+  width:100vw;
+  background-color: rgb(73 73 73);
+}
+
+.Group-classes-container > h1{
+  padding: 20px;
+  color:white;
+}
+.Group-classes-container > img{
+  width: 100vw;
+  height: calc(100vh - 145px);
+}
+
+.Newsletter-container{
+  height:70vh;
+  width:100vw;
+  background-image: url("https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  justify-content: center;
+  align-items:center;
+}
+
+.Newsletter-container > h1, .Newsletter-container > h3{
+  color:white;
+}
+
+/* About */
+.About-me-title{
+  height: 20vh;
+  background: rgb(89, 89, 89);
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 30px;
+}
+
+.About-me-text{
+  justify-content: center;
+  padding-right:60px;
+}
+
+.Zoe-portrait{
+  width: 40%;
+  padding: 60px;
+  height: 100vh;
+}
+
+.Light-background{
+  background: whitesmoke;
+}
+
+/* Philosophy */
+.Philosophy-text > h3, .Philosophy-text > p{
+  padding-bottom:20px;
+}
+
+/* Classes */
+
+.Classes-image{
+  width: 50%;
+  padding: 30px;
+  height:60%;
+
+}
+
+.Classes-text{
+  padding-left:50px;
+  justify-content: center;
+}
+
+.Book-a-class-section{
+  height:45vh;
+  width:100vw;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+  align-items:center;
+}
+.Book-a-class-section > a{
+  text-decoration: none;
+}
+
+.Height-40{
+  height:40vw;
+}
+
+/* Offerings */
+.Offerings-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+.Class-offering{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:40px;
+}
+.Class-offering > img{
+  border-radius:4px;
+  height: 220px;
+  width: 270px;
+}
+
+.Class-offerings{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contact */
+.Contact-form{
+  width:50%;
+}
+
+label{
+  font-family: 'Rubik', sans-serif;
+  margin-top:20px;
+  margin-bottom:5px;
+}
+
+.Sm-label{
+  font-size:12px;
+  margin-top:5px;
+}
+
+input{
+  height: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  border: solid 0.5px gray;
+  border-radius: 4px;
+  padding: 5px 10px;
+  background-color: rgb(237, 237, 237);
+}
+
+textarea{
+  height: 100px;
+  font-family: 'Rubik', sans-serif;
+  font-size:16px;
+  border:solid 0.5px gray;
+  border-radius:4px;
+  padding:10px;
+  background-color: rgb(237, 237, 237);
+}
+
+input[type="submit"]{
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: grey;
+  color: white;
+  width: 150px;
+  height: 60px;
+}
+
+.ml-10{
+  margin-left:10px;
+}
