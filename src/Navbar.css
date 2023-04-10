@@ -2,10 +2,12 @@
   .Navbar{
     height: 100vh;
     width:100vw;
+    overflow-y:none;
   }
   .Logo{
     color: black;
-    padding: 10px 0px 0px 10px;
+    padding-left: 15px;
+    font-size: 22px;
   }
   .Nav-links > a{
     color:black;
@@ -17,24 +19,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height:90%;
+    height:55%;
   }
 
   .Navbar-header{
     display: flex;
+    width:100%;
     justify-content: space-between;
+    align-items:center;
+    background-color:rgb(73 73 73);
+    height:10vh;
   }
   .Navbar-wrapper{
-    height:100vh;
+    height:calc(100vh - 49px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items:center;
+    justify-content:center;
   }
 
-  .X-btn{
+  .X-btn, .Hamburger-button{
     background-color: transparent;
     border: none;
-    padding: 10px 10px 0px 0px
+    padding: 10px 10px 0px 0px;
+    /* position:absolute;
+    right: 10px;
+    top:10px; */
   }
 
   .X{
@@ -44,6 +54,12 @@
   .Big-btn{
     width:200px;
     font-size: 20px !important;
+  }
+  .Navbar-desktop{
+    display:none;
+  }
+  .white-background{
+    background-color:white !important;
   }
 }
 
@@ -77,6 +93,7 @@
     align-items: center;
     height: 90px;
     padding: 0px 20px;
+    background-color:rgb(73 73 73);
   }
 
   .Navbar-header{
@@ -84,7 +101,8 @@
     justify-content: space-between;
   }
 
-  .X-btn{
+  .X-btn, .Hamburger-button, .Navbar-mobile{
     display:none;
   }
+
 }

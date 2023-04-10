@@ -7,9 +7,12 @@ function HomePage() {
   return (
     <div>
       <Navbar />
-      <section className="Hero">
-        <h1>Yoga for your mind, body and soul.</h1>
-        <a href="/">Book a Class</a>
+      <section className="Dark-background Flex Justify-center">
+        <div className="Hero">
+          {/* <img className="Hero" src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="woman does yoga"></img> */}
+          <h1>Yoga for your mind, body and soul.</h1>
+          <a href="/">Book a Class</a>
+        </div>
       </section>
       <section className="Group-classes-container">
         <h1>Group Classes, Private Classes & Events</h1>

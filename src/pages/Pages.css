@@ -1,7 +1,6 @@
 /* Home page */
 .Hero{
   background-image: url("https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  width: 100vw;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,6 +9,7 @@
 @media only screen and (max-width: 640px){
   .Hero{
     height: 100vh;
+    width:90vw;
   }
   .Hero > h1{
     margin:0px;
@@ -28,16 +28,21 @@
     letter-spacing: 1px;
   }
   .Group-classes-container > img{
-    width: 100vw;
-    height: 50vh;
+    height: 35vh;
+    width: 90vw;
+    align-self: center;
   }
   .Group-classes-container{
     display:flex;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: center;
+    height: 70vh;
+
   }
   .Group-classes-container > .Grey-button{
     margin-left:20px;
+    margin-top:20px;
+    width:100px;
   }
   .Newsletter-container{
     height:90vh !important;
@@ -45,11 +50,11 @@
   .Zoe-portrait{
     width: 90%;
     padding: 20px;
-    height: 100vh;
+    height: 85vh;
   }
   .About-me-text{
     justify-content: center;
-    padding:30px;
+    padding:0px 22px ;
   }
   .Class-offerings{
     display: flex;
@@ -65,10 +70,44 @@
   .Contact-container{
     padding:20px
   }
+  .Classes-section{
+    align-items:center;
+  }
+  .Classes-text{
+    padding: 20px;
+    justify-content: center;
+  }
+  .Classes-image{
+    width: 90%;
+    padding: 30px;
+    height:60%;
+  }
+  .About-me-title{
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .Contact-form{
+    width:100%;
+  }
+  .Group-classes-container > h1{
+    padding: 20px;
+    color:white;
+  }
+  .location-section{
+    display:flex;
+    flex-direction: column;
+  }
+  .Location-info{
+    text-align:right;
+    margin-right:10px;
+    height:55vh;
+    justify-content: center;
+  }
 }
 @media only screen and (min-width: 640px){
   .Hero{
     height: calc(100vh - 90px);
+    width: 100vw;
   }
   .Hero > h1{
     margin:0px;
@@ -87,13 +126,21 @@
     letter-spacing: 1px;
   }
   .Group-classes-container > img{
-    width: 100vw;
-    height: calc(100vh - 145px);
+    width: 95vw;
+    height: 70vh;
+    align-self:center;
+  }
+  .Group-classes-container > .Grey-button{
+    margin-left:30px;
+    margin-top:20px;
+    width:120px;
   }
   .Zoe-portrait{
     width: 40%;
-    padding: 60px;
+    margin: 60px;
     height: 100vh;
+    border-radius: 50%;
+    border: solid 1px;
   }
   .About-me-text{
     justify-content: center;
@@ -110,17 +157,52 @@
     justify-content: center;
     height:100vh;
   }
+  .Classes-section{
+    height: 80vh;
+    align-items: center;
+  }
+  .Classes-text{
+    padding-left:50px;
+    justify-content: center;
+  }
+  .Classes-image{
+    width: 50%;
+    padding: 30px;
+    height:60%;
+  }
+  .Group-classes-container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .About-me-title{
+    font-size: 50px;
+  }
+  .Contact-form{
+    width:50%;
+  }
+  .Contact-container{
+    height:85vh;
+  }
+  .Group-classes-container > h1{
+    padding: 50px 0px 15px 30px;
+    color:white;
+  }
+  .location-section{
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .Location-info{
+    text-align:right;
+    margin-right:10px;
+  }
 }
 .Group-classes-container{
-  height:100vh;
   width:100vw;
   background-color: rgb(73 73 73);
 }
 
-.Group-classes-container > h1{
-  padding: 20px;
-  color:white;
-}
 
 
 .Newsletter-container{
@@ -141,17 +223,16 @@
 
 /* About */
 .About-me-title{
-  font-size: 50px;
   font-weight: 400;
 }
 
 .About-me-container{
-  height: 20vh;
-  background: rgb(89, 89, 89);
+  background-color:rgb(73 73 73);
   display: flex;
   align-items: flex-end;
   color: white;
   padding: 30px;
+  height:12vh;
 }
 
 
@@ -159,23 +240,16 @@
   background: whitesmoke;
 }
 
+.Med-light-background{
+  background: #e4e4e4;
+}
+
 /* Philosophy */
 .Philosophy-text > h3, .Philosophy-text > p{
-  padding-bottom:20px;
+  padding-bottom:50px;
 }
 
 /* Classes */
-
-.Classes-image{
-  width: 50%;
-  padding: 30px;
-  height:60%;
-}
-
-.Classes-text{
-  padding-left:50px;
-  justify-content: center;
-}
 
 .Book-a-class-section{
   height:45vh;
@@ -186,10 +260,7 @@
 }
 .Book-a-class-section > a{
   text-decoration: none;
-}
-
-.Height-40{
-  height:40vw;
+  padding: 15px 20px !important;
 }
 
 /* Offerings */
@@ -206,9 +277,6 @@
 }
 
 /* Contact */
-.Contact-form{
-  width:50%;
-}
 
 label{
   font-family: 'Rubik', sans-serif;
@@ -248,6 +316,10 @@ input[type="submit"]{
   color: white;
   width: 150px;
   height: 60px;
+}
+
+input[id="lname"], input[id="fname"]{
+  width: 90%;
 }
 
 .ml-10{

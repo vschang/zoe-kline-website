@@ -33,7 +33,7 @@ a.Love-link{
     display:flex;
     flex-direction: column;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
     padding-left: 20px;
   }
   .Love-container{
@@ -50,11 +50,11 @@ a.Love-link{
     justify-content: space-between;
   }
 
-.ml-40{
-  margin-left:40px;
-}
+  .ml-40{
+    margin-left:40px;
+  }
 
-.mr-40{
-  margin-right:40px;
-}
+  .mr-40{
+    margin-right:40px;
+  }
 }
