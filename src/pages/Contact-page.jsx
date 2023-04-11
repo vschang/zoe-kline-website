@@ -6,22 +6,22 @@ import Map from '../Map.jsx'
 
 function ContactPage() {
   return (
-    <div>
+    <div className="Gradient-background">
       <Navbar />
       <div className="About-me-container">
         <h1 className="About-me-title">Contact Page</h1>
       </div>
       <section className="Desktop-mobile-flex Justify-between Contact-container mt-40">
         <div className="ml-40">
-          <h2>Contact me.</h2>
+          <h2 className="mb-20 Dark-grey-text">Contact me.</h2>
           <p>zoekline4@gmail.com</p>
           <p>+34 603 84 64 48</p>
           <div className="Flex mt-30">
             <a href="https://www.instagram.com/zoekline.yoga/" target="_blank" rel="noreferrer">
-              <Icon icon="mdi:instagram" />
+              <Icon className="Dark-grey-text" icon="mdi:instagram" />
             </a>
             <a href="/" className="ml-10">
-              <Icon icon="ri:facebook-fill" />
+              <Icon className="Dark-grey-text" icon="ri:facebook-fill" />
             </a>
           </div>
         </div>
@@ -45,7 +45,7 @@ function ContactPage() {
             <label htmlFor="message">Message</label>
             <textarea id="message" name="message"></textarea>
 
-            <input type="submit" value="Send"></input>
+            <input className="Button" type="submit" value="Send"></input>
           </div>
         </form>
       </section>

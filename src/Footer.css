@@ -4,10 +4,14 @@
 }
 
 .Flex > a{
-  color:black;
+  color:grey;
   text-decoration: none;
   font-size: 20px;
 }
+.Footer > a:hover, .Flex-column > a:hover, .Flex > a:hover{
+  opacity: 0.8;
+}
+
 
 .mt-40{
   margin-top: 40px;
@@ -34,7 +38,9 @@ a.Love-link{
     flex-direction: column;
     width: 100%;
     height: 65vh;
+    justify-content: flex-end;
     padding-left: 20px;
+    padding-bottom: 40px;
   }
   .Love-container{
     display:flex;

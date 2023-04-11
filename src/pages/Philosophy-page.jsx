@@ -6,7 +6,7 @@ import { Icon } from '@iconify/react';
 
 function PhilosophyPage() {
   return (
-    <div>
+    <div className="Gradient-background">
       <Navbar />
       <div className="About-me-container">
         <h1 className="About-me-title">My Philosophy</h1>

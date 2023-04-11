@@ -2,17 +2,19 @@
   .Navbar{
     height: 100vh;
     width:100vw;
-    overflow-y:none;
+    overflow-y:none !important;
+    /* background: rgb(252,218,46);
+    background: linear-gradient(0deg, rgba(252,218,46,0.6909357492997199) 0%, rgba(255,139,69,0.65172006302521) 100%, rgba(253,155,45,1) 100%); */
   }
   .Logo{
-    color: black;
+    color: white;
     padding-left: 15px;
     font-size: 20px;
     font-weight:bold;
     text-decoration:none;
   }
   .Nav-links > a{
-    color:black;
+    color:white;
     text-decoration: none;
     font-size:30px;
   }
@@ -29,45 +31,54 @@
     width:100%;
     justify-content: space-between;
     align-items:center;
-    background-color:rgb(73 73 73);
+    background-color: rgba(73, 73, 73, 0.124);
     height:10vh;
   }
   .Navbar-wrapper{
-    height:calc(100vh - 49px);
+    height:calc(100vh - 67px);
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    justify-content: flex-start;
+    background: transparent;
+    margin-top: 60px;
   }
 
   .X-btn, .Hamburger-button{
     background-color: transparent;
     border: none;
     padding: 10px 10px 0px 0px;
-    /* position:absolute;
-    right: 10px;
-    top:10px; */
   }
 
   .X{
     height:35px;
     width:35px;
+    color:white;
   }
-  .Big-btn{
-    width:200px;
-    font-size: 20px !important;
-  }
+
   .Navbar-desktop{
     display:none;
   }
-  .white-background{
-    background-color:white !important;
+  .Transparent-background{
+    background:transparent;
   }
+
+  .active{
+    border-bottom: solid 2px white;
+  }
+  .Small-btn{
+    text-decoration: none;
+    padding: 15px 20px !important;
+    color:#00000096 !important;
+    border-color: #00000096 !important;
+    box-shadow: 0 0.2rem 0 #00000096 !important;
+  }
+
 }
 
 @media only screen and (min-width: 640px){
   .Logo{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size:22px;
     font-weight:bold;
@@ -78,14 +89,14 @@
     background:rgb(89, 89, 89);
   }
   .Nav-links > a{
-    color:black;
+    color:white;
     text-decoration: none;
     margin:8px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
   }
   .Nav-links > a:hover{
-    border-bottom: solid 2px black;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.325);
   }
   .Nav-links{
     display:flex;
@@ -98,7 +109,7 @@
     align-items: center;
     height: 90px;
     padding: 0px 20px;
-    background-color:rgb(73 73 73);
+    background-color:rgba(73, 73, 73, 0.124);
   }
 
   .Navbar-header{
@@ -110,8 +121,11 @@
     display:none;
   }
 
-}
+  .active{
+    border-bottom: solid 1px white;
+  }
 
-.active{
-  color:greenyellow !important;
+  .Small-btn{
+    padding: 12px 20px !important;
+  }
 }

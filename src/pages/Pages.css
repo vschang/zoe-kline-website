@@ -1,35 +1,34 @@
 /* Home page */
-.Hero{
-  background-image: url("../images/zoe-hero.jpeg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 @media only screen and (max-width: 640px){
   .Hero{
+    background-image: url("../images/zoe-hero.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .Hero{
     height: 100vh;
-    width:90vw;
+    width:100vw;
   }
   .Hero > h1{
-    margin:0px;
-    color:white;
-    font-size:40px;
+    margin: 0px;
+    color: white;
+    font-size: 44px;
     font-weight: 400;
-    width:100%;
-    padding:60px 0px 20px 20px;
+    padding: 60px 10px 20px 20px;
     letter-spacing: 1.2px;
   }
   .Hero > a{
     color:white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    padding:20px 0px 0px 20px;
+    padding:30px 0px 0px 20px;
     letter-spacing: 1px;
   }
   .Group-classes-container > img{
     height: 35vh;
-    width: 90vw;
+    width: 100vw;
     align-self: center;
   }
   .Group-classes-container{
@@ -37,20 +36,38 @@
     flex-direction:column;
     justify-content: center;
     height: 70vh;
-
+    align-items:center;
   }
   .Group-classes-container > .Grey-button{
     margin-left:20px;
     margin-top:20px;
     width:100px;
   }
+  .View-more-btn{
+    margin-top:20px;
+    color:white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+  }
   .Newsletter-container{
     height:90vh !important;
+    width:100vw;
+    background-image: url('../images/zoe-about.jpeg');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    justify-content: center;
+    align-items:center;
   }
   .Zoe-portrait{
     width: 90%;
-    padding: 20px;
-    height: 85vh;
+    margin: 20px;
+    height: 75vh;
+    border-radius: 50%;
+    border: solid 0.5px #00000096;
+    object-fit:cover;
   }
   .About-me-text{
     justify-content: center;
@@ -79,8 +96,10 @@
   }
   .Classes-image{
     width: 90%;
-    padding: 30px;
+    margin: 30px;
     height:60%;
+    border-radius: 10px;
+    border: solid 0.5px black;
   }
   .About-me-title{
     font-size: 40px;
@@ -92,6 +111,9 @@
   .Group-classes-container > h1{
     padding: 20px;
     color:white;
+    font-weight: normal;
+    text-align: right;
+    font-size:26px;
   }
   .location-section{
     display:flex;
@@ -106,13 +128,20 @@
 }
 @media only screen and (min-width: 640px){
   .Hero{
+    background-image: url("../images/zoe-hero.jpeg");
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+  .Hero{
     height: calc(100vh - 90px);
     width: 100vw;
   }
   .Hero > h1{
     margin:0px;
     color:white;
-    font-size:55px;
+    font-size:60px;
     font-weight: 400;
     width:60%;
     padding:60px 0px 20px 30px;
@@ -120,27 +149,52 @@
   }
   .Hero > a{
     color:white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     padding:20px 0px 0px 30px;
     letter-spacing: 1px;
   }
+
+  .Book-a-class-link{
+    transition: transform .3s ease-out;
+    display: inline-block;
+  }
+
+  .Book-a-class-link:hover{
+    transform: translateX(5px);
+  }
+
   .Group-classes-container > img{
-    width: 95vw;
+    width: 65vw;
     height: 70vh;
-    align-self:center;
+    align-self: center;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 1px white;
   }
-  .Group-classes-container > .Grey-button{
-    margin-left:30px;
-    margin-top:20px;
-    width:120px;
+  .View-more-btn{
+    position: absolute;
+    right: 250px;
+    top: 300px;
+    font-size:26px;
+    color:white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
   }
+  .Button:hover{
+    cursor: pointer;
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.025rem 0 white;
+  }
+
   .Zoe-portrait{
     width: 40%;
     margin: 60px;
-    height: 100vh;
+    height: 90vh;
     border-radius: 50%;
-    border: solid 1px;
+    border: solid 0.5px #00000096;
   }
   .About-me-text{
     justify-content: center;
@@ -149,16 +203,18 @@
   .Class-offerings{
     display: flex;
     justify-content: space-between;
+    width:100%;
   }
   .Offerings-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height:80vh;
+    padding: 0px 30px;
   }
   .Classes-section{
-    height: 80vh;
+    height: 70vh;
     align-items: center;
   }
   .Classes-text{
@@ -167,13 +223,16 @@
   }
   .Classes-image{
     width: 50%;
-    padding: 30px;
+    margin: 30px;
     height:60%;
+    border-radius:10px;
+    border: solid 0.5px black;
   }
   .Group-classes-container{
     height:100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .About-me-title{
     font-size: 50px;
@@ -185,8 +244,10 @@
     height:85vh;
   }
   .Group-classes-container > h1{
-    padding: 50px 0px 15px 30px;
+    padding: 40px 0px;
     color:white;
+    text-align: center;
+    font-size: 32px;
   }
   .location-section{
     display:flex;
@@ -197,24 +258,20 @@
     text-align:right;
     margin-right:10px;
   }
+  .Newsletter-container{
+    height:70vh;
+    width:100vw;
+    background-image: url('../images/zoe-about.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    align-items:center;
+  }
 }
 .Group-classes-container{
   width:100vw;
-  background-color: rgb(73 73 73);
-}
-
-
-
-.Newsletter-container{
-  height:70vh;
-  width:100vw;
-  background-image: url("https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  justify-content: center;
-  align-items:center;
 }
 
 .Newsletter-container > h1, .Newsletter-container > h3{
@@ -227,21 +284,17 @@
 }
 
 .About-me-container{
-  background-color:rgb(73 73 73);
+  background-color:rgba(73, 73, 73, 0.124);
   display: flex;
   align-items: flex-end;
   color: white;
   padding: 30px;
-  height:12vh;
+  height:8vh;
 }
 
 
 .Light-background{
-  background: whitesmoke;
-}
-
-.Med-light-background{
-  background: #e4e4e4;
+  background: #f5f5f554;
 }
 
 /* Philosophy */
@@ -254,13 +307,20 @@
 .Book-a-class-section{
   height:45vh;
   width:100vw;
-  background-color: lightgrey;
+  background: #e4e4e423;
   justify-content: space-evenly;
   align-items:center;
 }
 .Book-a-class-section > a{
   text-decoration: none;
   padding: 15px 20px !important;
+  color:#00000096;
+  border-color: #00000096;
+  box-shadow: 0 0.2rem 0 #00000096;
+}
+.Book-a-class-section > h1{
+  font-size: 45px;
+  color:#00000096;
 }
 
 /* Offerings */
@@ -269,11 +329,18 @@
   flex-direction: column;
   align-items: center;
   padding:40px;
+
 }
-.Class-offering > img{
-  border-radius:4px;
+.Class-offering-image{
+  border-radius: 10px;
   height: 220px;
   width: 270px;
+  border: solid 0.5px black;
+  transition: border-radius 0.5s;
+}
+
+a > .Class-offering-image:hover{
+  border-radius: 50%;
 }
 
 /* Contact */
@@ -282,6 +349,7 @@ label{
   font-family: 'Rubik', sans-serif;
   margin-top:20px;
   margin-bottom:5px;
+  color:#00000096;
 }
 
 .Sm-label{
@@ -293,29 +361,28 @@ input{
   height: 30px;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  border: solid 0.5px gray;
-  border-radius: 4px;
+  border: solid 0.5px #00000096;
+  border-radius: 10px;
   padding: 5px 10px;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(237 237 237 / 40%);
 }
 
 textarea{
   height: 100px;
   font-family: 'Rubik', sans-serif;
   font-size:16px;
-  border:solid 0.5px gray;
-  border-radius:4px;
+  border:solid 0.5px #00000096;
+  border-radius: 10px;
   padding:10px;
-  background-color: rgb(237, 237, 237);
+  background-color: rgb(237 237 237 / 40%)
 }
 
 input[type="submit"]{
   margin-top: 20px;
-  border-radius: 4px;
-  background-color: grey;
-  color: white;
-  width: 150px;
-  height: 60px;
+  height: fit-content !important;
+  color:#00000096;
+  border-color:#00000096;
+  box-shadow: 0 0.2rem 0 #00000096;
 }
 
 input[id="lname"], input[id="fname"]{
@@ -324,4 +391,18 @@ input[id="lname"], input[id="fname"]{
 
 .ml-10{
   margin-left:10px;
+}
+
+.Button{
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0.2rem 0 white;
+  border: 0.1rem solid white;
+  border-radius: 1.5rem;
+  transition: 0.15s;
+  transition-timing-function: ease-out;
+  width: fit-content !important;
+  text-align: center;
 }

@@ -8,8 +8,8 @@ function NavBar() {
   const handleToggle = () => {setIsOpen(prev => !prev)}
 
   return (
-    <div className="NavBar">
-      <div className={`Navbar-header Navbar-mobile ${isOpen ? "white-background" : ""}`}>
+    <div className={isOpen ? "Navbar" : "NavBar"}>
+      <div className={`Navbar-header Navbar-mobile ${isOpen ? "Transparent-background" : ""}`}>
         <a href="/" className="Logo">zoeklineyoga</a>
       {isOpen ?
         <button className="X-btn" onClick={() => handleToggle()}>
@@ -24,14 +24,14 @@ function NavBar() {
       <div className="Navbar-mobile">
         <div className="Navbar-wrapper">
           <div className="Nav-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/philosophy">Philosophy</a>
-            <a href="/classes">Classes</a>
-            <a href="/offerings">Offerings</a>
-            <a href="/contact">Contact</a>
+            <NavLink to="/" className={({isActive}) => (isActive ? "active" : '')}>Home</NavLink>
+            <NavLink to="/about" className={({isActive}) => (isActive ? "active" : '')}>About</NavLink>
+            <NavLink to="/philosophy" className={({isActive}) => (isActive ? "active" : '')}>Philosophy</NavLink>
+            <NavLink to="/classes" className={({isActive}) => (isActive ? "active" : '')}>Classes</NavLink>
+            <NavLink to="/offerings" className={({isActive}) => (isActive ? "active" : '')}>Offerings</NavLink>
+            <NavLink to="/contact" className={({isActive}) => (isActive ? "active" : '')}>Contact</NavLink>
           </div>
-          <a className="Grey-button Big-btn mt-60" href="/">Book a Class</a>
+          <a className="Button Small-btn mt-60" href="/">Book a Class</a>
         </div>
       </div>
       : null}
@@ -48,7 +48,7 @@ function NavBar() {
             <NavLink to="/classes" className={({isActive}) => (isActive ? "active" : '')}>Classes</NavLink>
             <NavLink to="/offerings" className={({isActive}) => (isActive ? "active" : '')}>Offerings</NavLink>
             <NavLink to="/contact" className={({isActive}) => (isActive ? "active" : '')}>Contact</NavLink>
-            <a className="Grey-button Big-btn" href="/">Book a Class</a>
+            <a className="Button Small-btn" href="/">Book a Class</a>
           </div>
         </div>
       </div>
