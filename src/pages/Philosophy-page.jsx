@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
+import Philosophy from '../images/zoe-philosophy.jpeg'
 import { Icon } from '@iconify/react';
 
 function PhilosophyPage() {
@@ -11,7 +12,7 @@ function PhilosophyPage() {
         <h1 className="About-me-title">My Philosophy</h1>
       </div>
       <section className="Desktop-mobile-flex Light-background">
-        <img className="Zoe-portrait" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=799&q=80" alt="Zoe Kline"></img>
+        <img className="Zoe-portrait" src={Philosophy} alt="Zoe Kline"></img>
         <div className="Flex-column About-me-text Philosophy-text">
           <h3 className="mt-10">Yoga is Union</h3>
           <p>My main philosophy of yoga is simple: <strong>Our minds, bodies and spirits are all one and each contributes to the health of the other.</strong> Similarly, on a larger scale, the true nature of yoga encourages that we are ALL part of the bigger picture, the union and the connection we all build with each other</p>

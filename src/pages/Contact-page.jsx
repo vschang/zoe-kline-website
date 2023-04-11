@@ -11,7 +11,7 @@ function ContactPage() {
       <div className="About-me-container">
         <h1 className="About-me-title">Contact Page</h1>
       </div>
-      <section className="Desktop-mobile-flex Light-background Justify-between Contact-container mt-40">
+      <section className="Desktop-mobile-flex Justify-between Contact-container mt-40">
         <div className="ml-40">
           <h2>Contact me.</h2>
           <p>zoekline4@gmail.com</p>
