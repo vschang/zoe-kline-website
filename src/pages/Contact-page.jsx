@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
 import { Icon } from '@iconify/react';
@@ -6,6 +6,11 @@ import { Element } from 'react-scroll';
 import Map from '../Map.jsx'
 
 function ContactPage() {
+  const firstnameRef = useRef(null)
+  const lastnameRef = useRef(null)
+  const emailRef = useRef(null)
+  const messageRef = useRef(null)
+
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
@@ -21,6 +26,20 @@ function ContactPage() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  function sendEmail(){
+    window.Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "valeriechang0@gmail.com",
+        Password : process.env.REACT_APP_SMTP_KEY,
+        To : 'valeriechang0@gmail.com',
+        From : 'valeriechang0@gmail.com',
+        Subject : 'New Yoga Inquiry',
+        Body : `${messageRef.current.value} - sent by:${firstnameRef.current.value} ${lastnameRef.current.value} from the email address:${emailRef.current.value}`
+    }).then(function() {
+      alert("Your message was sent!")
+    });
+  }
 
   return (
     <div className="Gradient-background">
@@ -44,25 +63,24 @@ function ContactPage() {
             </a>
           </div>
         </div>
-        <form className="Contact-form mr-40 mt-40" action="src/form-process.php" method="POST">
-        {/* <form className="Contact-form mr-40 mt-40" action="/action_page.php" method="get"> */}
+        <form onSubmit={() => sendEmail()} className="Contact-form mr-40 mt-40">
           <label>Name</label>
           <div className="Flex">
             <div className="Flex-column Flex-1">
-              <input type="text" id="fname" name="firstname"></input>
-              <label htmlFor="fname" className="Sm-label">First Name</label>
+              <input ref={firstnameRef} type="text" id="fname" name="firstname" placeholder="First"></input>
+              <label htmlFor="fname" className="Sm-label" required>First Name</label>
             </div>
             <div className="Flex-column Flex-1 ml-10">
-              <input type="text" id="lname" name="lastname"></input>
+              <input ref={lastnameRef} type="text" id="lname" name="lastname" placeholder="Last"></input>
               <label htmlFor="lname" className="Sm-label">Last Name</label>
             </div>
           </div>
           <div className="Flex-column">
             <label htmlFor="email">Email</label>
-            <input type="text" id="email" name="email"></input>
+            <input ref={emailRef} type="text" id="email" name="email" placeholder="name@email.com" required></input>
 
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea ref={messageRef} id="message" name="message" placeholder="Your message here" required></textarea>
 
             <input className="Button" type="submit" value="Send"></input>
           </div>
