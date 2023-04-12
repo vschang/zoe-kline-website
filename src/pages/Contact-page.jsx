@@ -6,6 +6,7 @@ import { Element } from 'react-scroll';
 import Map from '../Map.jsx'
 
 function ContactPage() {
+  const formRef = useRef(null)
   const firstnameRef = useRef(null)
   const lastnameRef = useRef(null)
   const emailRef = useRef(null)
@@ -27,7 +28,8 @@ function ContactPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  function sendEmail(){
+  function sendEmail(e){
+    e.preventDefault()
     window.Email.send({
         Host : "smtp.elasticemail.com",
         Username : "valeriechang0@gmail.com",
@@ -35,10 +37,13 @@ function ContactPage() {
         To : 'valeriechang0@gmail.com',
         From : 'valeriechang0@gmail.com',
         Subject : 'New Yoga Inquiry',
-        Body : `${messageRef.current.value} - sent by:${firstnameRef.current.value} ${lastnameRef.current.value} from the email address:${emailRef.current.value}`
-    }).then(function() {
-      alert("Your message was sent!")
-    });
+        Body : `${messageRef.current.value} - sent by: ${firstnameRef.current.value} ${lastnameRef.current.value} from the email address: ${emailRef.current.value}`
+    }).then(function (message) {
+      alert("message sent successfully")
+    }).catch(error => {
+      alert("not successful, try again")
+    })
+    formRef.current.reset()
   }
 
   return (
@@ -63,7 +68,7 @@ function ContactPage() {
             </a>
           </div>
         </div>
-        <form onSubmit={() => sendEmail()} className="Contact-form mr-40 mt-40">
+        <form ref={formRef} onSubmit={(e) => sendEmail(e)} className="Contact-form mr-40 mt-40">
           <label>Name</label>
           <div className="Flex">
             <div className="Flex-column Flex-1">
