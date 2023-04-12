@@ -25,9 +25,6 @@ function OfferingsPage() {
                 <p className='mt-10'>1hr session - 10€ (or 32€ for 4 classes)</p>
               </li>
             </ul>
-            {/* <h4 className="Bold mt-20">Studio Classes</h4>
-            <p className="mt-10">Group Classes (max 10 students)</p>
-            <p className='Text-center mt-10'>1hr session - 10€ (or 32€ for 4 classes)</p> */}
           </div>
           <div className="Class-offering">
             <a href='/contact'>
@@ -45,9 +42,6 @@ function OfferingsPage() {
                 <p className="mt-10">Inquiries through contact page</p>
               </li>
             </ul>
-            {/* <p className="mt-10">1hr - 40€</p>
-            <p className="mt-10">Online 1hr - 24€</p>
-            <p className="mt-10">Inquiries through contact page</p> */}
           </div>
           <div className="Class-offering">
             <a href='/contact'>
@@ -59,7 +53,6 @@ function OfferingsPage() {
                 <p className="mt-10">Inquiries through contact page</p>
               </li>
             </ul>
-            {/* <p className="mt-10">Inquiries through contact page</p> */}
           </div>
         </div>
       </div>

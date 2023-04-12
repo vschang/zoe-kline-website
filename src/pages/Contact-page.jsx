@@ -39,9 +39,9 @@ function ContactPage() {
         Subject : 'New Yoga Inquiry',
         Body : `${messageRef.current.value} - sent by: ${firstnameRef.current.value} ${lastnameRef.current.value} from the email address: ${emailRef.current.value}`
     }).then(function (message) {
-      alert("message sent successfully")
+      alert("Message sent successfully!")
     }).catch(error => {
-      alert("not successful, try again")
+      alert("Not successful, please try again!")
     })
     formRef.current.reset()
   }
@@ -87,7 +87,7 @@ function ContactPage() {
             <label htmlFor="message">Message</label>
             <textarea ref={messageRef} id="message" name="message" placeholder="Your message here" required></textarea>
 
-            <input className="Button" type="submit" value="Send"></input>
+            <input className="Button mt-20" type="submit" value="Send"></input>
           </div>
         </form>
       </section>
