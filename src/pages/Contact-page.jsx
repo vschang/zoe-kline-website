@@ -1,10 +1,27 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
 import { Icon } from '@iconify/react';
+import { Element } from 'react-scroll';
 import Map from '../Map.jsx'
 
 function ContactPage() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (elementPosition < windowHeight - 50) {
+          element.classList.add('animate');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="Gradient-background">
       <Navbar />
@@ -14,8 +31,10 @@ function ContactPage() {
       <section className="Desktop-mobile-flex Justify-between Contact-container mt-40">
         <div className="ml-40">
           <h2 className="mb-20 Dark-grey-text">Contact me.</h2>
-          <p>zoekline4@gmail.com</p>
-          <p>+34 603 84 64 48</p>
+          <div className="Flex-column">
+            <p className="Dark-grey-text"><a className="no-underline" href="mailto: zoekline4@gmail.com">zoekline4@gmail.com</a></p>
+            <p className="Dark-grey-text mt-10"><a className="no-underline" href="tel:34603846448">+34 603 84 64 48</a></p>
+          </div>
           <div className="Flex mt-30">
             <a href="https://www.instagram.com/zoekline.yoga/" target="_blank" rel="noreferrer">
               <Icon className="Dark-grey-text" icon="mdi:instagram" />
@@ -49,17 +68,19 @@ function ContactPage() {
           </div>
         </form>
       </section>
-      <section className="location-section">
-        <div className="Location-info Flex-column">
-          <h3>Location</h3>
-          <a className="no-underline" href="https://goo.gl/maps/dmoChE2q3KaghjDLA" target="_blank" rel="noreferrer">
-            <p className="mt-10">Churruca Gym Club</p>
-            <p className="mt-10">Calle Churruca, 12</p>
-            <p className="mt-10">Madrid Centro 28004</p>
-          </a>
-        </div>
-        <Map />
-      </section>
+      <Element className="animate-on-scroll">
+        <section className="location-section">
+          <div className="Location-info Flex-column">
+            <h3>Location</h3>
+            <a className="no-underline" href="https://goo.gl/maps/dmoChE2q3KaghjDLA" target="_blank" rel="noreferrer">
+              <p className="mt-10">Churruca Gym Club</p>
+              <p className="mt-10">Calle Churruca, 12</p>
+              <p className="mt-10">Madrid Centro 28004</p>
+            </a>
+          </div>
+          <Map />
+        </section>
+      </Element>
       <Footer />
     </div>
   )

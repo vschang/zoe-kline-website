@@ -31,7 +31,7 @@ function OfferingsPage() {
           </div>
           <div className="Class-offering">
             <a href='/contact'>
-              <img className="Class-offering-image" src="https://images.unsplash.com/photo-1567281150864-5296ada11f3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="a woman does yoga"></img>
+              <img className="Class-offering-image" src="https://images.unsplash.com/photo-1567281105113-a9b2effdc9a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="two women in a yoga studio"></img>
             </a>
             <h4  className="Bold mt-20">Private Classes</h4>
             <ul>

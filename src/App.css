@@ -33,16 +33,6 @@
   flex-grow:1;
 }
 
-/* .Grey-button{
-  border-radius: 4px;
-  background-color: #a6a6a6;
-  color: white !important;
-  padding: 15px 20px;
-  text-decoration: none !important;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 a.Grey-button:hover{
   text-decoration:none !important;
@@ -161,4 +151,15 @@ ul{
 
 .Dark-grey-text{
   color: #00000096;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
