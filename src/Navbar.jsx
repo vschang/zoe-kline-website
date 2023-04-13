@@ -31,7 +31,7 @@ function NavBar() {
             <NavLink to="/offerings" className={({isActive}) => (isActive ? "active" : '')}>Offerings</NavLink>
             <NavLink to="/contact" className={({isActive}) => (isActive ? "active" : '')}>Contact</NavLink>
           </div>
-          <a className="Button Small-btn mt-60" href="/">Book a Class</a>
+          <a className="Button Small-btn mt-40" href="/">Book a Class</a>
         </div>
       </div>
       : null}

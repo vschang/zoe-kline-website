@@ -5,8 +5,8 @@ function Form() {
   return(
     <form action="https://api.smtprelay.co/contact/add?version=2" data-id="iFLPQLZpZv" method="post" id="ewf_subscriptionForm_iFLPQLZpZv" className="EWF__form Inline">
       <div class="headers">
-      <h1 id="ewf_formheader" className="white-text Text-center">Subscribe to my newsletter</h1>
-      <p id="ewf_formdesc" className="white-text Text-center mt-20">Sign up to receive news and updates</p>
+      <h1 id="ewf_formheader" className="white-text">Subscribe to my newsletter</h1>
+      <p id="ewf_formdesc" className="white-text mt-20">Sign up to receive news and updates</p>
       </div>
       <div class="Form-inputs-container">
         <fieldset class="webform-custominputs">

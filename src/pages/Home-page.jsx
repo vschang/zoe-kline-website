@@ -36,7 +36,9 @@ function HomePage() {
       <Element className="animate-on-scroll">
         <section className="Group-classes-container">
           <h1>Group Classes, Private Classes & Events</h1>
-          <img className="Group-classes-image" src={Class} alt="Zoe Kline does yoga"></img>
+          <div className="Group-classes-image-container">
+            <img className="Group-classes-image" src={Class} alt="Zoe Kline does yoga"></img>
+          </div>
           <a href="/classes" className="View-more-btn Book-a-class-link">View More
             <Icon className="ml-10" icon="material-symbols:arrow-right-alt-rounded" />
           </a>

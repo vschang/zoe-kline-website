@@ -3,6 +3,9 @@ import Navbar from '../Navbar.jsx'
 import Footer from '../Footer.jsx'
 import { Icon } from '@iconify/react';
 import { Element } from 'react-scroll';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Map from '../Map.jsx'
 
 function ContactPage() {
@@ -11,6 +14,8 @@ function ContactPage() {
   const lastnameRef = useRef(null)
   const emailRef = useRef(null)
   const messageRef = useRef(null)
+
+  const notify = () => toast("Wow so easy!");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +33,28 @@ function ContactPage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleSuccess = () => {
+    toast.success('Message sent successfully!', {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      draggable: false,
+      progress: undefined,
+    });
+  };
+
+  const handleError = () => {
+    toast.success('Message sent successfully!', {
+      position: 'top-right',
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      draggable: false,
+      progress: undefined,
+    });
+  };
+
   function sendEmail(e){
     e.preventDefault()
     window.Email.send({
@@ -39,9 +66,9 @@ function ContactPage() {
         Subject : 'New Yoga Inquiry',
         Body : `${messageRef.current.value} - sent by: ${firstnameRef.current.value} ${lastnameRef.current.value} from the email address: ${emailRef.current.value}`
     }).then(function (message) {
-      alert("Message sent successfully!")
+      handleSuccess()
     }).catch(error => {
-      alert("Not successful, please try again!")
+      handleError()
     })
     formRef.current.reset()
   }
@@ -52,6 +79,7 @@ function ContactPage() {
       <div className="About-me-container">
         <h1 className="About-me-title">Contact Page</h1>
       </div>
+      <ToastContainer />
       <section className="Desktop-mobile-flex Justify-between Contact-container mt-40">
         <div className="ml-40">
           <h2 className="mb-20 Dark-grey-text">Contact me.</h2>

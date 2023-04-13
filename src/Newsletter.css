@@ -6,6 +6,9 @@ form.EWF__form {
   padding-right:40px;
   border-radius:6px;
   width:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* .EWF__form .webform-options {
@@ -63,6 +66,10 @@ margin-right: 5px;
 .inputs > input{
   border:solid 0.5px white;
   color:white;
+  margin: 10px;
+  height: 40px;
+  padding: 5px 15px;
+  border-radius: 15px;
 }
 
 .inputs > ::placeholder{
@@ -73,10 +80,51 @@ margin-right: 5px;
   color:white;
   border:0.1rem solid white;
   box-shadow: 0 0.2rem 0 white;
+  margin-top: 7px;
 }
 
 .Form-inputs-container{
   display:flex;
   width:100%;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 640px){
+  form.EWF__form {
+    height: 50%;
+  }
+  .inputs > input{
+    height: 40px;
+  }
+  #eesubmit{
+    margin-top: 7px;
+  }
+  .headers{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .Form-inputs-container{
+    flex-direction: column;
+    align-items:center;
+  }
+  .inputs{
+    display:flex;
+    flex-direction: column;
+  }
+  form.EWF__form {
+    height: 75%;
+  }
+  .inputs > input{
+    height: 45px;
+  }
+  #eesubmit{
+    margin-top: 30px;
+  }
+  .headers{
+    text-align:left !important;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
 }
