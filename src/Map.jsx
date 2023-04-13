@@ -19,6 +19,7 @@ function MyComponent() {
   })
 
   const [map, setMap] = React.useState(null)
+  console.log(map)
 
   const onLoad = React.useCallback(function callback(map) {
     map.setZoom(16)
