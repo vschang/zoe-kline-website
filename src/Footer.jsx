@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
+import { NavLink } from 'react-router-dom';
 import './Footer.css'
 
 function Footer() {
@@ -13,10 +14,10 @@ function Footer() {
         </div>
       </div>
       <div className="Flex-column mt-40">
-        <a href="/about">About</a>
-        <a href="/">Location</a>
-        <a href="/classes">Classes</a>
-        <a href="/">Book a Class</a>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Location</NavLink>
+        <NavLink to="/classes">Classes</NavLink>
+        <NavLink to="/">Book a Class</NavLink>
       </div>
       <div className="Flex mt-40 mr-40">
         <a href="https://www.instagram.com/zoekline.yoga/" target="_blank" rel="noreferrer">

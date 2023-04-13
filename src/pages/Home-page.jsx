@@ -4,6 +4,7 @@ import Footer from '../Footer.jsx'
 import Class from '../images/zoe-classes.jpeg'
 import { Icon } from '@iconify/react';
 import { Element } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 import Form from '../Newsletter-form.jsx'
 import './Pages.css'
 
@@ -39,9 +40,9 @@ function HomePage() {
           <div className="Group-classes-image-container">
             <img className="Group-classes-image" src={Class} alt="Zoe Kline does yoga"></img>
           </div>
-          <a href="/classes" className="View-more-btn Book-a-class-link">View More
+          <NavLink to="/offerings" className="View-more-btn Book-a-class-link">View More
             <Icon className="ml-10" icon="material-symbols:arrow-right-alt-rounded" />
-          </a>
+          </NavLink>
         </section>
       </Element>
       <Element className="animate-on-scroll">
