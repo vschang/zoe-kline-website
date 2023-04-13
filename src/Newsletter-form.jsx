@@ -4,30 +4,30 @@ import './Newsletter.css'
 function Form() {
   return(
     <form action="https://api.smtprelay.co/contact/add?version=2" data-id="iFLPQLZpZv" method="post" id="ewf_subscriptionForm_iFLPQLZpZv" className="EWF__form Inline">
-      <div class="headers">
+      <div className="headers">
       <h1 id="ewf_formheader" className="white-text">Subscribe to my newsletter</h1>
       <p id="ewf_formdesc" className="white-text mt-20">Sign up to receive news and updates</p>
       </div>
-      <div class="Form-inputs-container">
-        <fieldset class="webform-custominputs">
-        <div class="inputs">
-          <input maxlength="100" class="form-control" name="field_firstname" size="20" type="text" false="" placeholder="First name"></input>
-          <input maxlength="100" class="form-control" name="field_lastname" size="20" type="text" false="" placeholder="Last name"></input>
-          <input maxlength="81" class="form-control" name="email" size="20" type="email" required="" placeholder="Email address"></input>
+      <div className="Form-inputs-container">
+        <fieldset className="webform-custominputs">
+        <div className="inputs">
+          <input maxLength="100" className="form-control" name="field_firstname" size="20" type="text" false="" placeholder="First name"></input>
+          <input maxLength="100" className="form-control" name="field_lastname" size="20" type="text" false="" placeholder="Last name"></input>
+          <input maxLength="81" className="form-control" name="email" size="20" type="email" required="" placeholder="Email address"></input>
         </div>
-        <div class="checkboxes">
+        <div className="checkboxes">
         </div>
-        <div class="webform-lists">
+        <div className="webform-lists">
         </div>
-        <div class="consent">
+        <div className="consent">
         </div>
         <p id="ewf_datadisclaimer">By signing up I agree to Elastic Mail's&nbsp;
           <a href="https://elasticemail.com/resources/usage-policies/terms-of-use/" target="_blank" rel="noreferrer">Terms of Use</a> and&nbsp;
           <a href="https://elasticemail.com/resources/usage-policies/privacy-policy/" target="_blank" rel="noreferrer">Privacy Policy</a>.
         </p>
         </fieldset>
-        <fieldset class="webform-options style-updated">
-          <input type="submit" name="submit" value="Sign up" id="eesubmit" class="Button"></input>
+        <fieldset className="webform-options style-updated">
+          <input type="submit" name="submit" value="Sign up" id="eesubmit" className="Button"></input>
           <input type="hidden" name="publicaccountid" value="8a925a47-504f-442e-a1c1-555b0ac48a83"></input>
           <input type="hidden" name="returnUrl" value=""></input>
           <input type="hidden" name="activationReturnUrl" value=""></input>
@@ -40,7 +40,7 @@ function Form() {
           <input type="hidden" name="notifyEmail" value=""></input>
         </fieldset>
       </div>
-      <div id="ewf_style" class="Inline">
+      <div id="ewf_style" className="Inline">
       </div>
     </form>
   )

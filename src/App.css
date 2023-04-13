@@ -171,3 +171,9 @@ fieldset{
   border:0px;
   padding: 0px;
 }
+
+input::placeholder, textarea::placeholder{
+  color: #00000068;
+}
+
+

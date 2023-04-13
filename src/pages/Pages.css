@@ -31,7 +31,7 @@
     align-self: center;
     width: auto;
     border-radius: 50%;
-    border: solid 0.5px white;
+    border: solid 0.75px white;
     align-self: center;
     overflow:hidden;
   }
@@ -74,7 +74,7 @@
     margin: 20px;
     height: 75vh;
     border-radius: 50%;
-    border: solid 0.5px #00000096;
+    border: solid 0.75px #00000096;
     object-fit:cover;
   }
   .About-me-text{
@@ -107,7 +107,7 @@
     margin: 30px;
     height:60%;
     border-radius: 10px;
-    border: solid 0.5px black;
+    border: solid 0.75px black;
   }
   .About-me-title{
     font-size: 40px;
@@ -132,6 +132,11 @@
     margin-right:20px;
     height:55vh;
     justify-content: center;
+  }
+  input[type="submit"]{
+    height: 44px !important;
+    width: 110px !important;
+    font-family: 'Quicksand', sans-serif;
   }
 }
 @media only screen and (min-width: 640px){
@@ -176,7 +181,7 @@
     width: 65vw;
     height: 70vh;
     border-radius: 50%;
-    border: solid 0.5px white;
+    border: solid 0.75px white;
     overflow: hidden;
     align-self: center;
   }
@@ -214,7 +219,7 @@
     margin: 60px;
     height: 90vh;
     border-radius: 50%;
-    border: solid 0.5px #00000096;
+    border: solid 0.75px #00000096;
   }
   .About-me-text{
     justify-content: center;
@@ -247,7 +252,7 @@
     margin: 30px;
     height:60%;
     border-radius:10px;
-    border: solid 0.5px black;
+    border: solid 0.75px black;
   }
   .Group-classes-container{
     height:100vh;
@@ -360,7 +365,7 @@
   border-radius: 10px;
   height: 220px;
   width: 270px;
-  border: solid 0.5px black;
+  border: solid 0.75px black;
   transition: border-radius 0.5s;
   object-fit: cover;
 }
@@ -387,24 +392,24 @@ input{
   height: 30px;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  border: solid 0.5px #00000096;
+  border: solid 0.75px #00000096;
   border-radius: 10px;
   padding: 5px 10px;
-  background-color: rgb(237 237 237 / 40%);
+  background-color: rgb(237 237 237 / 15%);
 }
 
 textarea{
   height: 100px;
   font-family: 'Rubik', sans-serif;
   font-size:16px;
-  border:solid 0.5px #00000096;
+  border:solid 0.75px #00000096;
   border-radius: 10px;
   padding:10px;
-  background-color: rgb(237 237 237 / 40%)
+  background-color: rgb(237 237 237 / 15%)
 }
 
 input[type="submit"]{
-  height: fit-content !important;
+  height: fit-content;
   color:#00000096;
   border-color:#00000096;
   box-shadow: 0 0.2rem 0 #00000096;
@@ -417,6 +422,7 @@ input[id="lname"], input[id="fname"]{
 input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
   outline: orange solid 1px;
   border-color:  transparent;
+  border-radius:10px;
 }
 
 .ml-10{

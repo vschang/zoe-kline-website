@@ -15,8 +15,6 @@ function ContactPage() {
   const emailRef = useRef(null)
   const messageRef = useRef(null)
 
-  const notify = () => toast("Wow so easy!");
-
   useEffect(() => {
     const handleScroll = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');

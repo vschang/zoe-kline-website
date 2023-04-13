@@ -69,12 +69,15 @@
   .Small-btn{
     text-decoration: none;
     padding: 15px 20px !important;
-    color:#00000096 !important;
-    border-color: #00000096 !important;
-    box-shadow: 0 0.2rem 0 #00000096 !important;
+    color:#00000073 !important;
+    border-color: #00000073 !important;
+    box-shadow: 0 0.2rem 0 #00000073 !important;
     font-size:20px;
+    border-radius: 30px !important;
   }
-
+  .no-scroll{
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 640px){

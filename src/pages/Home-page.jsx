@@ -46,17 +46,7 @@ function HomePage() {
       </Element>
       <Element className="animate-on-scroll">
         <section className="Newsletter-container Flex-column">
-          {/* <div>
-            <h1 className="white-text">Subscribe to My Newsletter</h1>
-            <p className="white-text Text-center mt-30">Sign up to receive news and updates</p>
-          </div> */}
           <Form/>
-          {/* <form id="Newsletter-form">
-            <input type="text" id="fname" name="firstname" placeholder="First" required></input>
-            <input type="text" id="lname" name="lastname" placeholder="Last"></input>
-            <input type="text" id="email" name="email" placeholder="name@email.com" required></input>
-            <input className="Button white-text" type="submit" value="Sign Up"></input>
-          </form> */}
         </section>
       </Element>
       <Footer />
