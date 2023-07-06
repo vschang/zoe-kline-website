@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Map from '../Map.jsx'
+// import Map from '../Map.jsx'
 
 function ContactPage() {
   const formRef = useRef(null)
