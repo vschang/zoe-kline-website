@@ -17,14 +17,11 @@ function Footer() {
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Location</NavLink>
         <NavLink to="/classes">Classes</NavLink>
-        <NavLink to="/">Book a Class</NavLink>
+        <a href="https://zoeklineyoga.setmore.com/zoekline" target="_blank" rel="noreferrer">Book a Class</a>
       </div>
       <div className="Flex mt-40 mr-40">
         <a href="https://www.instagram.com/zoekline.yoga/" target="_blank" rel="noreferrer">
           <Icon icon="mdi:instagram" />
-        </a>
-        <a href="/" className="ml-10">
-          <Icon icon="ri:facebook-fill" />
         </a>
       </div>
     </div>

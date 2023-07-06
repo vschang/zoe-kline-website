@@ -57,15 +57,17 @@ function ContactPage() {
     e.preventDefault()
     window.Email.send({
         Host : "smtp.elasticemail.com",
-        Username : "valeriechang0@gmail.com",
+        Username : "zoekline4@gmail.com",
         Password : process.env.REACT_APP_SMTP_KEY,
-        To : 'valeriechang0@gmail.com',
-        From : 'valeriechang0@gmail.com',
+        To : 'zoekline4@gmail.com',
+        From : 'zoekline4@gmail.com',
         Subject : 'New Yoga Inquiry',
         Body : `${messageRef.current.value} - sent by: ${firstnameRef.current.value} ${lastnameRef.current.value} from the email address: ${emailRef.current.value}`
     }).then(function (message) {
+      console.log(message)
       handleSuccess()
     }).catch(error => {
+      console.log(error)
       handleError()
     })
     formRef.current.reset()
@@ -83,14 +85,11 @@ function ContactPage() {
           <h2 className="mb-20 Dark-grey-text">Contact me.</h2>
           <div className="Flex-column">
             <p className="Dark-grey-text"><a className="no-underline" href="mailto: zoekline4@gmail.com">zoekline4@gmail.com</a></p>
-            <p className="Dark-grey-text mt-10"><a className="no-underline" href="tel:34603846448">+34 603 84 64 48</a></p>
+            <p className="Dark-grey-text mt-10"><a className="no-underline" href="tel:19255483881">925 548 3881</a></p>
           </div>
           <div className="Flex mt-30">
             <a href="https://www.instagram.com/zoekline.yoga/" target="_blank" rel="noreferrer">
               <Icon className="Dark-grey-text" icon="mdi:instagram" />
-            </a>
-            <a href="/" className="ml-10">
-              <Icon className="Dark-grey-text" icon="ri:facebook-fill" />
             </a>
           </div>
         </div>
@@ -121,13 +120,16 @@ function ContactPage() {
         <section className="location-section">
           <div className="Location-info Flex-column">
             <h3>Location</h3>
-            <a className="no-underline" href="https://goo.gl/maps/dmoChE2q3KaghjDLA" target="_blank" rel="noreferrer">
-              <p className="mt-10">Churruca Gym Club</p>
-              <p className="mt-10">Calle Churruca, 12</p>
-              <p className="mt-10">Madrid Centro 28004</p>
+            <a className="no-underline" href="https://goo.gl/maps/2RDGkciCTqUQj28u7" target="_blank" rel="noreferrer">
+              <p className="mt-10">Livermore, California</p>
+              <p className="mt-10">94550</p>
             </a>
           </div>
-          <Map />
+          {/* <Map /> */}
+          <iframe width="600" height="450" style={{border: 0}} loading="lazy"
+            allowFullScreen title="map of Livermore, California"
+            src="https://www.google.com/maps/embed/v1/place?q=Livermore%2C%20CA%2C%20USA&key=AIzaSyB9XMZIJvRdeAvmsshwaKdSpA5HXMnPM2A">
+          </iframe>
         </section>
       </Element>
       <Footer />

@@ -31,7 +31,7 @@ function HomePage() {
       <section className="Dark-background Flex Justify-center">
         <div className="Hero">
           <h1>Yoga for your mind, body and soul.</h1>
-          <a href="/" className="Book-a-class-link">Book a Class</a>
+          <a href="https://zoeklineyoga.setmore.com/zoekline" target="_blank" rel="noreferrer" className="Book-a-class-link">Book a Class</a>
         </div>
       </section>
       <Element className="animate-on-scroll">

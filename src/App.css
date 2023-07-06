@@ -152,6 +152,11 @@ ul{
   color: #00000096;
 }
 
+.iconify{
+  width:30px;
+  height:30px;
+}
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(50px);
@@ -175,5 +180,3 @@ fieldset{
 input::placeholder, textarea::placeholder{
   color: #00000068;
 }
-
-

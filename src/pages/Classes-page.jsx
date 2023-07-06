@@ -47,7 +47,7 @@ function ClassesPage() {
       <Element className="animate-on-scroll">
         <section className="Book-a-class-section Flex-column">
           <h1>Book a Class</h1>
-          <a className="Button" href="/">Book a Class</a>
+          <a className="Button" href="https://zoeklineyoga.setmore.com/zoekline" target="_blank" rel="noreferrer">Book a Class</a>
         </section>
       </Element>
       <Footer />

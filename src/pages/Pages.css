@@ -227,7 +227,7 @@
   .Class-offerings{
     display: flex;
     justify-content: space-between;
-    width:100%;
+    width:70%;
   }
   .Offerings-page{
     display: flex;

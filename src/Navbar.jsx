@@ -39,7 +39,7 @@ function NavBar() {
             <NavLink to="/offerings" onClick={() => allowScroll()} className={({isActive}) => (isActive ? "active" : '')}>Offerings</NavLink>
             <NavLink to="/contact" onClick={() => allowScroll()} className={({isActive}) => (isActive ? "active" : '')}>Contact</NavLink>
           </div>
-          <a onClick={() => allowScroll()} className="Button Small-btn mt-40" href="/">Book a Class</a>
+          <a onClick={() => allowScroll()} className="Button Small-btn mt-40" href="https://zoeklineyoga.setmore.com/zoekline" target="_blank" rel="noreferrer">Book a Class</a>
         </div>
       </div>
       : null}
@@ -56,7 +56,7 @@ function NavBar() {
             <NavLink to="/classes" className={({isActive}) => (isActive ? "active" : '')}>Classes</NavLink>
             <NavLink to="/offerings" className={({isActive}) => (isActive ? "active" : '')}>Offerings</NavLink>
             <NavLink to="/contact" className={({isActive}) => (isActive ? "active" : '')}>Contact</NavLink>
-            <a className="Button Small-btn" href="/">Book a Class</a>
+            <a className="Button Small-btn" href="https://zoeklineyoga.setmore.com/zoekline" target="_blank" rel="noreferrer">Book a Class</a>
           </div>
         </div>
       </div>
