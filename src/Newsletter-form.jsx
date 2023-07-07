@@ -4,10 +4,8 @@ import './Newsletter.css'
 function Form() {
   return(
     <form action="https://api.smtprelay.co/contact/add?version=2"
-      // data-id="iFLPQLZpZv"
       data-id="qUHalnEMsc"
       method="post"
-      // id="ewf_subscriptionForm_iFLPQLZpZv"
       id="ewf_subscriptionForm_qUHalnEMsc"
       className="EWF__form Inline">
       <div className="headers">
@@ -32,19 +30,6 @@ function Form() {
           <a href="https://elasticemail.com/resources/usage-policies/privacy-policy/" target="_blank" rel="noreferrer">Privacy Policy</a>.
         </p>
         </fieldset>
-        {/* <fieldset className="webform-options style-updated">
-          <input type="submit" name="submit" value="Sign up" id="eesubmit" className="Button"></input>
-          <input type="hidden" name="publicaccountid" value="8a925a47-504f-442e-a1c1-555b0ac48a83"></input>
-          <input type="hidden" name="returnUrl" value=""></input>
-          <input type="hidden" name="activationReturnUrl" value=""></input>
-          <input type="hidden" name="alreadyactiveurl" value=""></input>
-          <input type="hidden" name="activationTemplate" value=""></input>
-          <input type="hidden" name="source" value="WebForm"></input>
-          <input type="hidden" name="verifyemail" value="false" id="ewf_verifyEmails"></input>
-          <input type="hidden" id="ewf_captcha" name="captcha" value="false"></input>
-          <input type="hidden" name="sendActivation" value="true"></input>
-          <input type="hidden" name="notifyEmail" value=""></input>
-        </fieldset> */}
         <fieldset class="webform-options style-updated">
           <input type="submit" name="submit" value="Sign up" id="eesubmit" className="Button"></input>
           <input type="hidden" name="publicaccountid" value="a6974da8-d636-4cbd-a0f9-0a2ecc8218db"></input>
