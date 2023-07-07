@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// import Map from '../Map.jsx'
+import Map from '../Map.jsx'
 
 function ContactPage() {
   const formRef = useRef(null)
@@ -43,7 +43,7 @@ function ContactPage() {
   };
 
   const handleError = () => {
-    toast.success('Message sent successfully!', {
+    toast.error('Message could not be sent, try again', {
       position: 'top-right',
       autoClose: 3000,
       hideProgressBar: true,
@@ -125,11 +125,11 @@ function ContactPage() {
               <p className="mt-10">94550</p>
             </a>
           </div>
-          {/* <Map /> */}
-          <iframe width="600" height="450" style={{border: 0}} loading="lazy"
+          <Map />
+          {/* <iframe width="600" height="450" style={{border: 0}} loading="lazy"
             allowFullScreen title="map of Livermore, California"
             src= {`https://www.google.com/maps/embed/v1/place?q=Livermore%2C%20CA%2C%20USA&key=${process.env.REACT_APP_API_KEY}`}>
-          </iframe>
+          </iframe> */}
         </section>
       </Element>
       <Footer />
